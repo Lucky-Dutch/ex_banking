@@ -1,5 +1,6 @@
 defmodule ExBanking.Application do
   use Application
+
   def start(_type, _args) do
     ExBanking.UserStorage.init()
     ExBanking.TransactionStorage.init()
